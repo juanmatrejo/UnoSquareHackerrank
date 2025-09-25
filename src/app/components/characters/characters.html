@@ -1,0 +1,7 @@
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col" *ngFor="let item of _rickAndMorty.results; let idx = index">
+        <div class="col">
+            <app-detail [result]="item"></app-detail>
+        </div>
+    </div>
+</div>

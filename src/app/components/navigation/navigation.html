@@ -1,0 +1,35 @@
+<div class="container text-center app-navigation">
+  <div class="row align-items-center">
+    <div class="col-2">
+      <button class="btn btn-primary btn-lg col-12" (click)="previous()" [disabled]="isFirstPage()">Previous</button>
+    </div>
+    <div class="col-8">
+      <label class="header-footer">Page {{currentPage}} of {{pages}}</label>
+    </div>
+    <div class="col-2">
+      <button class="btn btn-success btn-lg col-12" (click)="next()" [disabled]="isLastPage()">Next</button>
+    </div>
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row align-items-center">
+    <div class="col-1">
+    </div>
+    <div class="col-10 main-container" #dvCharacters tabindex="0">
+      <app-characters [_rickAndMorty]="_result"></app-characters>
+    </div>
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row align-items-center">
+    <div class="col-2">
+      <button class="btn btn-primary btn-lg col-12" (click)="previous()" [disabled]="isFirstPage()">Previous</button>
+    </div>
+    <div class="col-8">
+      <label class="header-footer">Page {{currentPage}} of {{pages}}</label>
+    </div>
+    <div class="col-2">
+      <button class="btn btn-success btn-lg col-12" (click)="next()" [disabled]="isLastPage()">Next</button>
+    </div>
+  </div>
+</div>

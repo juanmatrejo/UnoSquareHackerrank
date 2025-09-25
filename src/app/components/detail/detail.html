@@ -1,0 +1,26 @@
+<div class="card">
+    <img [src]="result.image" class="card-img-top" alt={{result.name}}>
+    <div class="card-body">
+        <h5 class="card-title" style="padding-bottom: 7px; font-size: x-large;">{{result.name}}</h5>
+        <div>
+            <label class="col-4 labelField">Species: </label>
+            <label class="col-8 valueFiel">{{result.species}}</label>
+        </div>
+        <div>
+            <label class="col-4 labelField">Gender: </label>
+            <label class="col-8 valueFiel">{{result.gender}}</label>
+        </div>
+        <div>
+            <label class="col-4 labelField">Origin: </label>
+            <label class="col-8 valueFiel">{{result.origin.name}}</label>
+        </div>
+        <div>
+            <label class="col-4 labelField">Location: </label>
+            <label class="col-8 valueFiel">{{result.location.name}}</label>
+        </div>
+        <div>
+            <label class="col-4 labelField">Status: </label>
+            <label class="col-8 valueFiel">{{result.status}}</label>
+        </div>
+    </div>
+</div>
